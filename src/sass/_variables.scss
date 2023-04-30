@@ -12,7 +12,7 @@ $color-main-background: rgba(14, 14, 14, 1);
 	text-decoration: none;
 	text-transform: capitalize;
 }
-@mixin text-style-h-1() {
+@mixin text-style-h1() {
 	font-size: 39px;
 	font-family: 'Poppins';
 	font-weight: 700;
@@ -20,7 +20,7 @@ $color-main-background: rgba(14, 14, 14, 1);
 	text-decoration: none;
 	text-transform: capitalize;
 }
-@mixin text-style-h-2() {
+@mixin text-style-h2() {
 	font-size: 31px;
 	font-family: 'Poppins';
 	font-weight: 700;
@@ -29,7 +29,7 @@ $color-main-background: rgba(14, 14, 14, 1);
 	text-decoration: none;
 	text-transform: uppercase;
 }
-@mixin text-style-h-3() {
+@mixin text-style-h3() {
 	font-size: 25px;
 	font-family: 'Poppins';
 	font-weight: 700;
