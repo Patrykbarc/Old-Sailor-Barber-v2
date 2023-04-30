@@ -27,7 +27,19 @@ body {
 
 section {
 	padding-top: 2rem;
+	padding-bottom: 5rem;
 }
+
+// variable classes
+.label {
+	@include text-style-label;
+}
+.cta-btn {
+	@include button;
+	margin-top: 2rem;
+}
+// end of varbiable classes
+
 .wrapper {
 	max-width: 1200px;
 	width: 100%;
@@ -61,10 +73,6 @@ section {
 		z-index: 1;
 		.hero-title {
 			@include text-style-display;
-		}
-		.cta-btn {
-			@include button;
-			margin-top: 2rem;
 		}
 	}
 	&__show-more {
@@ -114,5 +122,17 @@ section {
 				transform: scale(105%);
 			}
 		}
+	}
+	// services
+	&__services {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 1rem;
+	}
+	.btn {
+		display: flex;
+		justify-content: center;
+		margin-top: 3rem;
 	}
 }
