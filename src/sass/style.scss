@@ -1,6 +1,7 @@
 @import './reset';
 @import './variables';
 @import './nav';
+@import './footer';
 @import './mixins';
 
 a {
@@ -40,7 +41,7 @@ body {
 	background: url('../../dist/img/hero-bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	z-index: 10;    
+	z-index: 10;
 	&__overlay {
 		position: absolute;
 		bottom: 0;
