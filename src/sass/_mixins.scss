@@ -1,6 +1,7 @@
 @import './variables';
 
 @mixin button {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -8,8 +9,34 @@
 	background-color: $color-brand-main;
 	width: fit-content;
 	height: fit-content;
+	transition: transform 0.3s;
+	overflow: hidden;
 	a {
 		@include text-style-button;
 		color: $color-main-background;
+	}
+}
+
+button:hover::before {
+	content: '';
+	position: absolute;
+	width: 45px;
+	height: 250%;
+	transform: skew(-30deg);
+	background-color: $color-brand-main;
+	mix-blend-mode: overlay;
+	left: -20%;
+	animation: slide 1s forwards;
+}
+
+@keyframes slide {
+	from {
+		left: -20%;
+		rotate: 0deg;
+	}
+
+	to {
+		left: 140%;
+		rotate: 30deg;
 	}
 }
