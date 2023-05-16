@@ -3,6 +3,9 @@
 # Ścieżka do katalogu Dropbox
 DROPBOX_DIR="/E:/Dropbox/test"
 
+# Ścieżka do katalogu projektu Git
+GIT_DIR="C:\Users\michal\Desktop\Frontend\Old Sailor Barber"
+
 # Wykonaj komendę "git push"
 git push
 
